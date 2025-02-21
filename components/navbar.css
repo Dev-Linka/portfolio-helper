@@ -1,0 +1,39 @@
+*{
+    text-decoration: none;
+    font-family: 'Space Grotesk';
+
+}
+
+.navbar{
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 36px;
+}
+
+button{
+    background-color: #B9FF66;
+    color: black;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 14;
+    
+}
+
+button:hover{
+    opacity: 0.8;
+}

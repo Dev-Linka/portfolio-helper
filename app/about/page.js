@@ -1,18 +1,10 @@
+'use client'
+import Link from 'next/link';
 
-import { useRouter } from 'next/navigation';
-
-export default function About(){
-    const { push } = useRouter();
+export default function about(){
     return(
         <>
-            <p>About page</p>
-            <form action={
-                push('/')
-            }>
-                <button>
-                    Click me 
-                </button>
-            </form>
+            <p className="text-blue-500">About page</p>
         </>
     );
 }
