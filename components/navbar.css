@@ -1,3 +1,5 @@
+
+
 *{
     text-decoration: none;
     font-family: 'Space Grotesk';
@@ -5,9 +7,10 @@
 }
 
 .navbar{
+    width: 100%;
     padding-top: 5px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gray;
     
 }
 
@@ -15,6 +18,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 48px;
 }
 
 li{
