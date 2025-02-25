@@ -1,7 +1,9 @@
 export default function register(){
     return(
         <>
-            <p>sign up page</p>
+            <div className="main">
+                <p>sign up page</p>    
+            </div>
         </>
     );
 }

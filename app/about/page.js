@@ -4,7 +4,9 @@ import Link from 'next/link';
 export default function about(){
     return(
         <>
-            <p>About page</p>
+            <div className="main">
+                <p>About page</p>
+            </div>
         </>
     );
 }

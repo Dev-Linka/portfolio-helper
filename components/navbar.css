@@ -1,20 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap');
 
-
-*{
+* {
     text-decoration: none;
     font-family: 'Space Grotesk';
-
 }
 
-.navbar{
+.navbar {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
     border-bottom: 2px solid gray;
-    
 }
 
-.navdiv{
+.navdiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,23 +20,31 @@
     padding-right: 48px;
 }
 
-li{
+li {
     list-style: none;
     display: inline-block;
     padding-right: 36px;
 }
 
-button{
+button.join {
     background-color: #B9FF66;
     color: black;
     padding-left: 17px;
     padding-right: 17px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 14;
-    
+    border-radius: 14px;
 }
 
-button:hover{
+button:hover {
     opacity: 0.8;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    padding-right: 10px; /* Adjust the value as needed */
 }

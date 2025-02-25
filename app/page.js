@@ -1,17 +1,18 @@
 "use client"
 import Link from 'next/link';
-import '@/components/home.css'
-import Navbar from '@/components/navbar.js'
+import '@/components/button.css'
 
 export default function Home() {
   return (
     <>
-    <div className='home'>
-      <p>Home page</p>
+      <div className='main'>
+        <p>Home page</p>
 
-      
-    </div>
+        <Link href="/design" className="btn btn-white btn-animate">
+          DESIGN
+        </Link>
+        
+      </div>
     </>
-    
   );
 }

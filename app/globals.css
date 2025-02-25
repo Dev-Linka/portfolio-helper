@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
-    --foreground: #0a0a0a;
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
 }
 
@@ -18,4 +18,16 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+button.design{
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 15px #f4f1f1;
 }
