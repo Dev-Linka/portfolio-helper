@@ -1,0 +1,25 @@
+button.mininav-btn {
+    background-color: gray;
+    padding: 5px 10px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+div.mininav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background-color: rgb(55, 54, 54);
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 20px;
+}
+
+.dynamic-rectangle {
+    height: 800px;
+    margin: 20px auto 0;
+    transition: width 0.3s ease;
+    border: 3px solid rebeccapurple;
+    
+}

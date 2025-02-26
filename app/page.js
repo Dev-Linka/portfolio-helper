@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import '@/components/button.css'
+import '@/styling/button.css'
 
 export default function Home() {
   return (

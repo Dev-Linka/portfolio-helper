@@ -1,9 +1,8 @@
 "use client"
-import '@/components/navbar.css'
+import '@/styling/navbar.css'
 import Link from 'next/link';
-import { Space_Grotesk } from "next/font/google";
 import Image from 'next/image'
-import img from './white.png'
+import img from '../images/white.png'
 
 export default function Navbar(){
     return(
