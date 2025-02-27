@@ -14,6 +14,7 @@ export default function Navbar(){
                             src={img}
                             alt="logo"
                             width={30}
+                            height={30}
                             className="logo-image"
                         />
                         <Link href={"/"}>

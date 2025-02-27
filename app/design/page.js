@@ -1,13 +1,20 @@
 'use client'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '@/styling/design.css'
+import Link from 'next/link';
+import Image from 'next/image'
+import img from '@/images/white.png'
 
 export default function Design() {
-    const [width, setWidth] = useState('1500px'); // Initial width of the rectangle
+    const [width, setWidth] = useState(null);
 
     const handleButtonClick = (newWidth) => {
         setWidth(newWidth);
     };
+
+    useEffect(() => {
+        setWidth('1500px');
+    }, []);
 
     return(
         <>
@@ -19,7 +26,21 @@ export default function Design() {
                     <button className='mininav-btn' onClick={() => handleButtonClick('1250px')}>L</button>
                     <button className='mininav-btn' onClick={() => handleButtonClick('1500px')}>XL</button>
                 </div>
-                <div className='dynamic-rectangle' style={{ width }}></div>
+                <button className='right-arr'>Click</button>
+                <div className='dynamic-rectangle' style={{ width }}>
+                <div className="logo m-5">
+                        <Image
+                            src={img}
+                            alt="logo"
+                            width={30}
+                            height={30}
+                            className="logo-image"
+                        />
+                        <Link href={"/"}>
+                            <p className='text-2xl font-medium'>Portfolio</p>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </>
     );
