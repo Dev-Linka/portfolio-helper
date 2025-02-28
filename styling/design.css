@@ -1,17 +1,23 @@
-.right-div {
+/*.container{
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    margin: 0px;
+    
+}*/
+
+.left-div {
     display: flex;
-    width: 1.5%;
-    background-color: rgb(128, 128, 128);
+    align-items: center;  /* Centers content vertically */
+    justify-content: flex-start; /* Aligns content to the left */
+    height: 100%;
+
 }
 
-button.right-arr {
-    float: left;
-    align-items: center;
+button.left-arr {
     background-color: gray;
     padding: 5px 10px;
-    margin-right: 15px;
     border-radius: 8px;
-
 }
 
 button.mininav-btn {
@@ -40,3 +46,34 @@ div.mininav {
     border: 3px solid rebeccapurple;
     
 }
+
+
+.container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "menu"
+      "footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    background-color: #2196F3;
+    padding: 5px;
+    color: black;
+  }
+  .container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+  }
+  .container > div.header {
+    grid-area: header;
+    text-align: center;
+  }
+  .container > div.menu {
+    grid-area: menu;
+  }
+  .container > div.content {
+    grid-area: content;
+  }
+  .container > div.footer {
+    grid-area: footer;
+  }
