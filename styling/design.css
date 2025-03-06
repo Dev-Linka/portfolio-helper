@@ -23,7 +23,9 @@ button.mininav-btn {
 }
 
 .left-div{
+    display: block;
     position: absolute;
+    
     left: 0;
     top: 50%; 
     transform: translateY(-50%);
@@ -33,12 +35,12 @@ button.mininav-btn {
     border-radius: 30px;
     display: inline-block;
     width: fit-content;
+
+    transition: left 0.7s ease;
 }
 
 .left-arr{
-    
     font-size: 25px;
-    
 }   
 
 .dynamic-rectangle {
@@ -47,11 +49,19 @@ button.mininav-btn {
     margin: 20px auto 0;
     transition: width 0.3s ease;
     border: 3px solid rebeccapurple;
-    
 }
 
-.side-div{
-    display: flex;
-    width: 100px;
+.side-div {
+    display: block;
+    position: absolute;
+    left: -200px; /* Initially hidden */
+    width: 200px;
+    height: 700px;
     background-color: greenyellow;
+    color: black;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+
+    transition: left 0.3s ease;
 }

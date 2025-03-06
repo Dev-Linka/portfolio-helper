@@ -14,16 +14,16 @@ export default function Design() {
 
     const openSideBar = () => {
         const sideDiv = document.querySelector('.side-div');
-        if (sideDiv) {
-            sideDiv.style.width = "100%";
-        }
+        const leftDiv = document.querySelector('.left-div');
+        sideDiv.style.left = "10px";
+        leftDiv.style.left = "-60px";
     };
 
     const closeSideBar = () => {
         const sideDiv = document.querySelector('.side-div');
-        if (sideDiv) {
-            sideDiv.style.width = "0%";
-        }
+        const leftDiv = document.querySelector('.left-div');
+        sideDiv.style.left = "-200px";
+        leftDiv.style.left = "0";
     }
 
     useEffect(() => {
@@ -42,7 +42,7 @@ export default function Design() {
                 </div>
 
                 <div className='side-div'>
-                    <button onClick={closeSideBar}>proprio io</button>
+                    <button onClick={closeSideBar}>&#10006;</button>
                 </div>
 
                 <div className='left-div'>
