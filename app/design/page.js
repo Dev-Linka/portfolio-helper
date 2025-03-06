@@ -13,15 +13,15 @@ export default function Design() {
     };
 
     const openSideBar = () => {
-        const sideDiv = document.querySelector('.side-div');
-        const leftDiv = document.querySelector('.left-div');
+        const sideDiv = document.querySelector('.div-slide');
+        const leftDiv = document.querySelector('.div-btn-left');
         sideDiv.style.left = "10px";
         leftDiv.style.left = "-60px";
     };
 
     const closeSideBar = () => {
-        const sideDiv = document.querySelector('.side-div');
-        const leftDiv = document.querySelector('.left-div');
+        const sideDiv = document.querySelector('.div-slide');
+        const leftDiv = document.querySelector('.div-btn-left');
         sideDiv.style.left = "-200px";
         leftDiv.style.left = "0";
     }
@@ -33,19 +33,19 @@ export default function Design() {
     return(
         <>
             <div className='container'>
-                <div className='mininav mt-5'>
-                    <button className='mininav-btn' onClick={() => handleButtonClick('500px')}>XS</button>
-                    <button className='mininav-btn' onClick={() => handleButtonClick('750px')}>S</button>
-                    <button className='mininav-btn' onClick={() => handleButtonClick('1000px')}>M</button>
-                    <button className='mininav-btn' onClick={() => handleButtonClick('1250px')}>L</button>
-                    <button className='mininav-btn' onClick={() => handleButtonClick('1500px')}>XL</button>
+                <div className='div-mininav mt-5'>
+                    <button className='btn-mininav' onClick={() => handleButtonClick('414px')}>XS</button>
+                    <button className='btn-mininav' onClick={() => handleButtonClick('768px')}>S</button>
+                    <button className='btn-mininav' onClick={() => handleButtonClick('1024px')}>M</button>
+                    <button className='btn-mininav' onClick={() => handleButtonClick('1280px')}>L</button>
+                    <button className='btn-mininav' onClick={() => handleButtonClick('1440px')}>XL</button>
                 </div>
 
-                <div className='side-div'>
+                <div className='div-slide'>
                     <button onClick={closeSideBar}>&#10006;</button>
                 </div>
 
-                <div className='left-div'>
+                <div className='div-btn-left'>
                     <button className='left-arr' onClick={openSideBar}>➡</button> 
                 </div>
 
