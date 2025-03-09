@@ -21,12 +21,6 @@
     padding-right: 48px;
 }
 
-li {
-    list-style: none;
-    display: inline-block;
-    padding-right: 36px;
-}
-
 button.join {
     background-color: #B9FF66;
     color: black;
